@@ -1,3 +1,3 @@
-# How to build web page using JQuey, Ajax, Bootstrap and Json Server
+# Basic website uses JQuery, Ajax, Bootstrap and Json Server
 
 
