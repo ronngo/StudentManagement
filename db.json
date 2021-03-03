@@ -1,0 +1,28 @@
+{
+  "Students": [
+    {
+      "Fullname": "Ngô Văn Rôn",
+      "Avatar": "images/Avatar.png",
+      "DOB": "11/01/2021",
+      "Class": {
+        "id": "2",
+        "Name": "JAVA"
+      },
+      "id": 1
+    }
+  ],
+  "Classes": [
+    {
+      "id": 1,
+      "Name": "PHP"
+    },
+    {
+      "id": 2,
+      "Name": "JAVA"
+    },
+    {
+      "id": 3,
+      "Name": "PYTHON"
+    }
+  ]
+}

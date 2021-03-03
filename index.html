@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="scripts/libs/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="site.css">
+
+  <title>Nodejs</title>
+ 
+</head>
+
+<body>
+  
+  <div class="container">
+    <h2 class="text-primary">Tạo Nhân Viên</h2>
+     <a href="javascrip:void(0);" class="btn btn-success"
+        onclick="student.openModal()">Thêm Mới</a>
+    
+     <div class="row mt-4">
+       <table class="table table-hover">
+         <thead class="thead-light">
+           <tr>
+             <th>ID</th>
+             <th>Họ và tên</th>
+             <th>Ảnh</th>
+             <th>Ngày sinh</th>
+             <th>Class</th>
+             <th>Action</th>
+           </tr>
+         </thead>
+         <tbody id="tbStudent">
+          
+
+         </tbody>
+       </table>
+     </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modal" id="addEditStudent">
+      <div class="modal-dialog ">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Thêm Mới</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+    
+        <!-- Modal body -->
+        <div class="modal-body  ">
+          <form id="formAddEditStudent">
+            <!-- thuộc tính hidden: nó vẫn tồn tại nhưng sẽ không hiện lên giao diện -->
+            <input hidden name="id" id="id" value="0">
+            <div class="row form-group">
+                <div class="col-3">
+                   <label>Họ và tên</label>
+                </div>
+                <div class="col-9"> 
+                   <input class="form-control" type="text" 
+                   name="Fullname" id="Fullname"   
+                  data-rule-required="true">
+                </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-3">
+                 <label>Ảnh</label>
+              </div>
+              <div class="col-9"> 
+                 <input class="form-control" type="text" name="Avatar" id="Avatar"
+                 data-rule-required="true"
+                 >
+              </div>
+            </div>
+
+          <div class="row form-group">
+            <div class="col-3">
+               <label>Ngày sinh</label>
+            </div>
+            <div class="col-9"> 
+               <input class="form-control" type="text" name="DOB" id="DOB"
+               data-rule-required="true"
+               >
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-3">
+               <label>Class</label>
+            </div>
+            <div class="col-9"> 
+              <select class="form-control" name="classId" id="classId"></select>
+              
+               
+            </div>
+          </div>
+          
+          
+           
+          
+          
+          </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="javascrip:;" class="btn btn-primary" 
+          onclick="student.save()">Lưu</a>
+
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+<script src="student.js"></script>
+
+
+<!-- <script src="scripts/libs/node_modules/jquery/dist/jquery.min.js"></script> -->
+
+</html>
